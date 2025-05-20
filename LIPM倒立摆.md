@@ -4,6 +4,7 @@
 
 
 质心在力f的作用下上下移动，r为支撑点与质心的距离，f可以分为x,y,z三个方向的分量：
+
 $$
 \begin{align*}
 f_x&=(x/r)f\\
@@ -21,12 +22,15 @@ M\ddot{z}&=(z/r)f - Mg
 $$
 
 定义约束面：
+
 $$
 z = k_xx + k_yy+z_c
 $$
+
 其中，kx,ky决定平面的倾斜，zc决定高度。
 
 为了使质心在约束面上运动，其加速度应该保持与约束面的法向量垂直，即：
+
 $$
 \begin{bmatrix}
 f(\frac{x}{r}), f(\frac{y}{r}), f(\frac{z}{r}) - Mg
@@ -35,22 +39,28 @@ f(\frac{x}{r}), f(\frac{y}{r}), f(\frac{z}{r}) - Mg
 -k_x\\ -k_y\\ 1
 \end{bmatrix}=0
 $$
+
 解得f：
+
 $$
 f = \frac{Mg}{z_c}
 $$
+
 因此，我们可以通过控制与腿长 r 成正比的伸缩力 f 来控制质心在约束面上运动。
 
 可以求得质心在水平方向的运动方程如下：
+
 $$
 \begin{align*}
 \ddot{x}&=\frac{g}{z_c}x\\
 \ddot{y}&=\frac{g}{z_c}y
 \end{align*}
 $$
+
 double_legs_test_fixed_switch_time.py
 
 轨道能量（OrbitalEnergy）：
+
 $$
 E = \frac{1}{2}v^2 - \frac{g}{2z}x^2
 $$
