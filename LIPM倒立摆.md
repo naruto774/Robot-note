@@ -1,6 +1,7 @@
 # LIPM倒立摆
 
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250520112818577.png" alt="image-20250520112818577" style="zoom:50%;" />
+![image](https://github.com/user-attachments/assets/b8bf5f44-599b-4624-9757-fcc4be8973cf)
+
 
 质心在力f的作用下上下移动，r为支撑点与质心的距离，f可以分为x,y,z三个方向的分量：
 $$
@@ -140,5 +141,6 @@ def switchSupportLeg(self):
     else:
         print('Error: support leg is a wrong value:', self.support_leg)
 ```
+![LIPM_double_legs_forward](https://github.com/user-attachments/assets/16466a37-1057-4b7e-8d6c-2414541042a1)
 
-![LIPM_double_legs_forward](D:\walkingrobot\BipedalWalkingRobots-main\pic\LIPM_double_legs_forward.gif)
+
