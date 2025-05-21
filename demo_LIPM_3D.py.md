@@ -53,6 +53,7 @@ LIPM_model.vy_0 = COM_v0[1]
 三、for循环
 
 ①LIPM_model.step()；用x0和v0求xt和vt
+
 $$
 \begin{cases}
 x_t &= x_0 \cosh(t/T_c) + T_c \dot{x}_0 \sinh(t/T_c) \\
@@ -60,6 +61,7 @@ x_t &= x_0 \cosh(t/T_c) + T_c \dot{x}_0 \sinh(t/T_c) \\
 T_c &= \sqrt{z/g}
 \end{cases}
 $$
+
 
 ```python
 def step(self):
